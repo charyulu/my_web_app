@@ -99,7 +99,8 @@ Replace the `hashed_password_here` placeholder in the database script with the g
 ---
 
 ## Testing
-
+### Set Environment Var
+export PYTHONPATH=<Project Root Folder>
 ### **Functional Tests**
 Functional tests validate individual features like login functionality. To run functional tests:
 ```bash
