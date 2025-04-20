@@ -9,4 +9,4 @@ CREATE TABLE IF NOT EXISTS users (
 -- Insert a sample user (for testing purposes)
 -- Note: Replace 'hashed_password_here' with the actual hashed password.
 INSERT INTO users (username, password_hash, photo_url)
-VALUES ('charyulu', '$2b$12$dGc0E13a/2b4QTaReE0XVu5YoArDXeaWVTa1mxjz6o0p.qTS6Ch7u', '/static/images/photo.jpg');
+VALUES ('charyulu', '$2b$12$dGc0E13a/2b4QTaReE0XVu5YoArDXeaWVTa1mxjz6o0p.qTS6Ch7u', '/static/images/ReceptionInvitePhoto_01.jpg');

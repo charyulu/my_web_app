@@ -1,16 +1,12 @@
 from flask import Flask
-from src.app.db import close_connection
+import os
+app = Flask(__name__)
+#export FLASK_SECRET_KEY="your_secure_key_here"
+app.secret_key = os.getenv("FLASK_SECRET_KEY", "default_secret_key")
 
+# Import and register blueprints
+from .routes import auth
+app.register_blueprint(auth.bp)
 
-def create_app():
-    app = Flask(__name__)
-    app.config.from_object("config.Config")
-# Register the function to close the database connection
-    # Import and register blueprints
-    from .routes.auth import auth_bp
-    app.register_blueprint(auth_bp)
-    @app.teardown_appcontext
-    def teardown_db(exception):
-        close_connection(exception)
-
-    return app
+# Export the app object
+__all__ = ['app']
