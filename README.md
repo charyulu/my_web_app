@@ -100,17 +100,17 @@ Replace the `hashed_password_here` placeholder in the database script with the g
 
 ## Testing
 ### Set Environment Var
-export PYTHONPATH=<Project Root Folder>
+export PYTHONPATH=[Project Root Folder]
 ### **Functional Tests**
 Functional tests validate individual features like login functionality. To run functional tests:
 ```bash
-pytest src/tests/functional
+pytest src/tests/functional/test_login.py
 ```
 
 ### **Integration Tests**
 Integration tests ensure that multiple components work together seamlessly. To run integration tests:
 ```bash
-pytest src/tests/integration
+pytest src/tests/integration/test_endpoints.py
 ```
 
 ---
