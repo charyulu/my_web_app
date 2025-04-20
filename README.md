@@ -172,3 +172,6 @@ my_web_app/
 - Follow the inline documentation in the code for better understanding.
 
 Let me know if you encounter any issues!
+
+## Request pattern
+Generate a complete Python Flask web application project with SQLite integration, including user login functionality, hashed password storage, profile page with photo display, database setup script, functional and integration tests, CI/CD pipeline configuration using Jenkins, and all necessary files like auth.py, db.py, templates, and README.md. The project should follow a structured folder hierarchy.
