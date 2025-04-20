@@ -18,12 +18,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Building the application...'
+                echo 'Build stage: Preparing for deployment...'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying the application...'
+                echo 'Deploy stage: Application deployed!'
             }
         }
     }

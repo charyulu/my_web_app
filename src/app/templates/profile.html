@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
 </head>
 <body>
-    <h1>Welcome to Your Profile</h1>
-    <img src="{{ photo_url }}" alt="Your Photo">
+    <h1>Welcome!</h1>
+    <p>Your profile photo:</p>
+    <img src="{{ photo_url }}" alt="Profile Photo" width="150" height="150">
+    <br>
+    <a href="{{ url_for('auth.logout') }}">Logout</a>
 </body>
 </html>
